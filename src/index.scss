@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+}
+
+.ui.menu .ui.dropdown.item .menu {
+  min-width: 100%;
+  margin-top: 0px;
+  border-radius: 0px !important;
+
+  & .item {
+    display: flex !important;
+    border-radius: 0px;
+    height: 47px;
+  }
+}
+
+.ui.secondary.menu {
+  & .ui.dropdown.item,
+  & .link.item,
+  & .active.item,
+  & a.item {
+    & > .menu {
+      margin-top: 0px;
+    }
+    height: 57px;
+    border-radius: 0px;
+    padding: 0px 24px;
+
+    &,
+    &:active,
+    &:focus,
+    &:hover {
+      height: 57px;
+      border-radius: 0px;
+      padding: 0px 24px;
+
+      & .menu.item {
+        display: flex;
+      }
+    }
+  }
+}
+
+.ui.secondary.menu .dropdown.item:hover,
+.ui.secondary.menu .link.item:hover,
+.ui.secondary.menu a.item:hover,
+.ui.secondary.menu .dropdown.item,
+.ui.secondary.menu .link.item,
+.ui.secondary.menu a.item {
+  display: flex;
+  height: 57px;
+  border-radius: 0px;
+  padding: 0px 24px;
+}
